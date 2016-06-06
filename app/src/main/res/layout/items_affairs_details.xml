@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/class_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="2dp">
+
+        <app.tutor.com.tutorapps.customview.RobotoMediam
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="description"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

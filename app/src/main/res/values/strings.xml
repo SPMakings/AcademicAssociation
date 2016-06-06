@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AcademicAssociationNew</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_subject_listing">SubjectListing</string>
+    <string name="title_activity_class_test_management">ClassTestManagement</string>
+    <string name="title_activity_exam_manager">ExamManager</string>
+    <string name="title_activity_exam_result">ExamResult</string>
+    <string name="title_activity_notice_board">NoticeBoard</string>
+    <string name="title_activity_study_materials">StudyMaterials</string>
+    <string name="title_activity_current_affairs_details">CurrentAffairsDetails</string>
+    <string name="title_activity_my_report">MyReport</string>
+    <string name="title_activity_my_gallery">MyGallery</string>
+    <string name="title_activity_noates">Noates</string>
+    <string name="title_activity_current_affairs">CurrentAffairsActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_promotion">Promotion</string>
+
+
+</resources>

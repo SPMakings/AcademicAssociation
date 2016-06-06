@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <app.tutor.com.tutorapps.customview.RobotoLight
+        android:id="@+id/set_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="Quesrtion Set 1"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp" />
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/class_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <app.tutor.com.tutorapps.customview.RobotoMediam
+                    android:id="@+id/fst_ico"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/corner_mole_dark"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Q?"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <app.tutor.com.tutorapps.customview.RobotoMediam
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fst_ico"
+                    android:padding="8dp"
+                    android:text="No. of Questions"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <app.tutor.com.tutorapps.customview.RobotoBold
+                    android:id="@+id/qun_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="25"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/fst_ico2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/corner_mole_dark"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_action_qtime"
+                    android:text="Q?" />
+
+                <app.tutor.com.tutorapps.customview.RobotoMediam
+                    android:id="@+id/txt22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fst_ico2"
+                    android:padding="8dp"
+                    android:text="Time (Minute)"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <app.tutor.com.tutorapps.customview.RobotoBold
+                    android:id="@+id/ttl_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="10"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <app.tutor.com.tutorapps.customview.RobotoMediam
+                    android:id="@+id/fst_ico3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/corner_mole_dark"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="="
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <app.tutor.com.tutorapps.customview.RobotoMediam
+                    android:id="@+id/txt23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fst_ico3"
+                    android:padding="8dp"
+                    android:text="Total Marks"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <app.tutor.com.tutorapps.customview.RobotoBold
+                    android:id="@+id/total_mrks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="25"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/fst_ico24"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/corner_mole_dark"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_action_right"
+                    android:text="Q?" />
+
+                <app.tutor.com.tutorapps.customview.RobotoMediam
+                    android:id="@+id/txt224"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fst_ico24"
+                    android:padding="8dp"
+                    android:text="Correct Answers"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <app.tutor.com.tutorapps.customview.RobotoBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="1.0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/fst_ico25"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/corner_mole_dark"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_action_cross_white"
+                    android:text="Q?" />
+
+                <app.tutor.com.tutorapps.customview.RobotoMediam
+                    android:id="@+id/txt225"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fst_ico25"
+                    android:padding="8dp"
+                    android:text="Penalty for Wrong Answer"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <app.tutor.com.tutorapps.customview.RobotoBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="0.33"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <app.tutor.com.tutorapps.customview.RobotoLight
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Best of Luck !"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+    <app.tutor.com.tutorapps.customview.RobotoMediam
+        android:id="@+id/start_exam"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/cornermole_white"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="START TEST"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

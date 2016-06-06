@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.tutor.com.tutorapps.ExamManager"
+    tools:showIn="@layout/activity_exam_manager">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/question_ans_listing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/loaderView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/exam_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <app.tutor.com.tutorapps.customview.RobotoLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preparing Exam..."
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

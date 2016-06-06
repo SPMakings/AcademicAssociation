@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/class_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <app.tutor.com.tutorapps.customview.RobotoMediam
+                android:id="@+id/notice_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:layout_toLeftOf="@+id/date"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="Notice Title"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/rightpnl"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorPrimaryDark"
+                android:padding="16dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_action_download" />
+
+            <ImageView
+                android:id="@+id/rightpnl_down"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="16dp"
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/ic_action_double_tick_white"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

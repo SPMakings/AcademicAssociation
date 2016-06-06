@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <app.tutor.com.tutorapps.customview.RobotoBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About US"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <app.tutor.com.tutorapps.customview.RobotoMediam
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="A dream we dreamt, we took up the venture 10 years back. The bewildered faces of innumerable young graduates trying to open up their intellectual power and struggling desperately to live with dignity, yet being helplessly bogged in despair, pained us. Prior to this, we humbly roosted on the branch of self contentment. Then valiantly we unfolded the wings to test our strength to soar. Since then our students have been keeping us buoyant. Now we have the boundless firmament to cover up. To turn the dream to a reality we just assembled a group of highly honed faculty comprised of academicians of repute and successful young WBCS officers who have gone through the acid test with determination unshivered and focussed dedication. They in unison stood by the young folk to inspire them to aspire confidently.\nThe rest of the story was written by the students. We just felt happy to see how their pale faces brightened like the crescent moon but we are not going to live happily ever after as our mission is &#39;miles to go before we sleep&#39;."
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+    </ScrollView>
+
+
+</LinearLayout>

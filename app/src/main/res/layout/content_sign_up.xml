@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.tutor.com.tutorapps.SignUpActivity"
+    tools:showIn="@layout/activity_sign_up">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:padding="22dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/given_logo" />
+
+
+        <app.tutor.com.tutorapps.customview.RobotoThin
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Academic Association"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/sign_prog"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/input_useremail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textColor="?attr/colorAccent"
+                android:textColorHint="?attr/colorAccent"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textColor="?attr/colorAccent"
+                android:textColorHint="?attr/colorAccent"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_userpass"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textColor="?attr/colorAccent"
+                android:textColorHint="?attr/colorAccent"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_user_cnf_pass"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textColor="?attr/colorAccent"
+                android:textColorHint="?attr/colorAccent"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textColor="?attr/colorAccent"
+                android:textColorHint="?attr/colorAccent"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_user_reg"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Registration Number (optional)"
+                android:inputType="numberDecimal"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textColor="?attr/colorAccent"
+                android:textColorHint="?attr/colorAccent"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <app.tutor.com.tutorapps.customview.RobotoMediam
+            android:id="@+id/sign_up"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/corner_mole_dark"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Sign Up"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>
