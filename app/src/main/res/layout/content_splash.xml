@@ -60,6 +60,7 @@
             android:id="@+id/sp_logo"
             android:layout_width="100dp"
             android:layout_height="50dp"
+            android:visibility="gone"
             android:layout_marginTop="2dp"
             android:src="@drawable/sp_logo" />
 

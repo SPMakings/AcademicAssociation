@@ -81,10 +81,24 @@ public class MockTestQuestionSet extends Fragment {
                                 builder.show();
                             } else {
                                 JSONArray innerTemp = response.getJSONArray("set_no");
-                                if (response.getInt("last_set_count") < 25) {
+                                if (response.getInt("last_set_count") < 200) {
                                     innerTemp.remove(0);
                                 }
-                                questionSet.setAdapter(new QuestionSetAdapter(getActivity(), innerTemp, false));
+
+                                if (innerTemp.length() > 0) {
+                                    questionSet.setAdapter(new QuestionSetAdapter(getActivity(), innerTemp, false));
+                                }else{
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                                    builder.setMessage("Question set for this subject will available soon.");
+                                    builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int id) {
+                                            dialog.dismiss();
+                                            getActivity().onBackPressed();
+                                        }
+                                    });
+                                    builder.setCancelable(false);
+                                    builder.show();
+                                }
                             }
                         } catch (Exception e) {
                             e.printStackTrace();

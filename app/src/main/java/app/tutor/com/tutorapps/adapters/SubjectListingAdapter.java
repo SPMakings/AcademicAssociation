@@ -27,11 +27,11 @@ public class SubjectListingAdapter extends RecyclerView.Adapter<SubjectListingAd
 
     LinkedList<String> subName;
     LinkedList<String> subID;
-    LinkedList<String> imageList;
+    int imageList[];
     Context mContext = null;
     boolean isOpeningForExam = false;
 
-    public SubjectListingAdapter(Context mContext, LinkedList<String> subName, LinkedList<String> imageList, LinkedList<String> subID, final boolean isOpeningForExam) {
+    public SubjectListingAdapter(Context mContext, LinkedList<String> subName, int imageList[], LinkedList<String> subID, final boolean isOpeningForExam) {
         super();
         this.subName = subName;
         this.subID = subID;
@@ -47,7 +47,7 @@ public class SubjectListingAdapter extends RecyclerView.Adapter<SubjectListingAd
 
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
-        Picasso.with(mContext).load(imageList.get(position)).fit().centerCrop().placeholder(R.drawable.place_cam).into(holder.iViewMain);
+        Picasso.with(mContext).load(imageList[position]).fit().centerCrop().placeholder(R.drawable.place_cam).into(holder.iViewMain);
         holder.subText.setText(subName.get(position));
 
         holder.mainView.setOnClickListener(new View.OnClickListener() {

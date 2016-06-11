@@ -20,10 +20,10 @@ public class PagerAdapter extends android.support.v4.view.PagerAdapter {
 
 
     LinkedList<String> subName;
-    LinkedList<String> imageList;
+    int imageList[];
     Context mContext = null;
 
-    public PagerAdapter(Context mContext, LinkedList<String> subName, LinkedList<String> imageList) {
+    public PagerAdapter(Context mContext, LinkedList<String> subName, int imageList[]) {
         super();
         this.subName = subName;
         this.imageList = imageList;
@@ -45,7 +45,7 @@ public class PagerAdapter extends android.support.v4.view.PagerAdapter {
 
         View view = LayoutInflater.from(mContext).inflate(R.layout.fragments_pager, null);
         ((RobotoBold) view.findViewById(R.id.subject_name)).setText(subName.get(position));
-        Picasso.with(mContext).load(imageList.get(position)).fit().centerCrop().placeholder(R.drawable.place_cam).into((ImageView) view.findViewById(R.id.header_image));
+        Picasso.with(mContext).load(imageList[position]).fit().centerCrop().placeholder(R.drawable.place_cam).into((ImageView) view.findViewById(R.id.header_image));
         // Glide.with(mContext).load("http://images.designtrends.com/wp-content/uploads/2016/03/16033524/cityscapes-cities-architecture-buildings-skyscrapers-night-lights-hdr-wallpaper-1.jpg").centerCrop().into((ImageView) view.findViewById(R.id.header_image));
 //        Picasso.with(mContext).load(imageList[position]).fit().centerCrop().into((ImageView) view.findViewById(R.id.header_image));
         container.addView(view);

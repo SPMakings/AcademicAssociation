@@ -34,7 +34,6 @@ import app.tutor.com.tutorapps.pojo.QuestionAnsModel;
 
 public class ExamManager extends AppCompatActivity {
 
-
     View pBAR;
     final String TAG = "ExamManager";
     LinkedList<QuestionAnsModel> mainModel = null;

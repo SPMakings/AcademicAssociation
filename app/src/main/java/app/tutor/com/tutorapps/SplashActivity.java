@@ -66,7 +66,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 if (AAApplication.getInstance().getUserData().getUserID().equals("")) {
                     findViewById(R.id.login_panel).setVisibility(View.VISIBLE);
-                    findViewById(R.id.sp_logo).setVisibility(View.GONE);
+                    //findViewById(R.id.sp_logo).setVisibility(View.GONE);
                 } else {
                     Intent i = new Intent(SplashActivity.this, LandingActivity.class);
                     startActivity(i);

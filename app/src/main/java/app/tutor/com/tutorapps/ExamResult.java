@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 
 import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.PieChart;
@@ -56,7 +57,7 @@ public class ExamResult extends AppCompatActivity {
 
         loader = findViewById(R.id.loader);
 
-        findViewById(R.id.start_exam).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.start_exam).setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -74,6 +75,16 @@ public class ExamResult extends AppCompatActivity {
 
 
         (new Calculating()).executeOnExecutor(AsyncTask.SERIAL_EXECUTOR);
+
+
+        findViewById(R.id.correct_answer).setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ExamResult.this, ShowingCorrectAnswerActivity.class);
+                startActivity(i);
+            }
+        });
 
     }
 
@@ -158,7 +169,7 @@ public class ExamResult extends AppCompatActivity {
 
             for (int i = 0; i < AAApplication.getInstance().getCURRENT_QUN_SET().size(); i++) {
                 if (AAApplication.getInstance().getCURRENT_QUN_SET().get(i).getYourAns() != 0) {
-                    if (AAApplication.getInstance().getCURRENT_QUN_SET().get(i).getYourAns()==AAApplication.getInstance().getCURRENT_QUN_SET().get(i).getCorrectAns()) {
+                    if (AAApplication.getInstance().getCURRENT_QUN_SET().get(i).getYourAns() == AAApplication.getInstance().getCURRENT_QUN_SET().get(i).getCorrectAns()) {
                         CORRECT++;
                     } else {
                         WRONG++;

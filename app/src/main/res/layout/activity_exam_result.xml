@@ -30,6 +30,20 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="18sp" />
 
+
+            <app.tutor.com.tutorapps.customview.RobotoMediam
+                android:id="@+id/correct_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/corner_mold_violet"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Correct Answer"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>

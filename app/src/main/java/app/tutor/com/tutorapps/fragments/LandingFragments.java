@@ -29,7 +29,7 @@ public class LandingFragments extends Fragment {
     ViewPager landingPager = null;
 
     LinkedList<String> sub_name = null;
-    LinkedList<String> imageID = null;
+    int imageID[] = new int[9];
     View indicator[] = new View[9];
 
 
@@ -69,19 +69,15 @@ public class LandingFragments extends Fragment {
             sub_name.add("General Science");
         }
 
-        if (imageID == null) {
-            imageID = new LinkedList<String>();
-            imageID.add("https://i.imgsafe.org/9361f0f.jpg");
-            imageID.add("https://i.imgsafe.org/9d9cb0d.jpg");
-            imageID.add("https://i.imgsafe.org/787d040.png");
-            imageID.add("https://i.imgsafe.org/694fd34.jpg");
-            imageID.add("https://i.imgsafe.org/a034cd9.jpg");
-            imageID.add("https://i.imgsafe.org/a8ceb77.png");
-            imageID.add("https://i.imgsafe.org/711c216.jpg");
-            imageID.add("https://i.imgsafe.org/7e609c8.jpg");
-            imageID.add("https://i.imgsafe.org/ab1ccdf.jpg");
-
-        }
+        imageID[0] = R.drawable.geography;
+        imageID[1] = R.drawable.history;
+        imageID[2] = R.drawable.english;
+        imageID[3] = R.drawable.constitution;
+        imageID[4] = R.drawable.indianhis;
+        imageID[5] = R.drawable.current;
+        imageID[6] = R.drawable.economy;
+        imageID[7] = R.drawable.intelliugence;
+        imageID[8] = R.drawable.science;
 
 
         landingPager = (ViewPager) view.findViewById(R.id.add_pager);
