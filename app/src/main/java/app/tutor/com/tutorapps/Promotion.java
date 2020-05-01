@@ -12,6 +12,7 @@ public class Promotion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        iyuijiomomomiomom
         setContentView(R.layout.activity_promotion);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
