@@ -30,6 +30,8 @@ public class StudyMaterials extends AppCompatActivity {
 
 
     private long enqueue;
+    private long enqueue2;
+    private long enqueue3;
     private DownloadManager dm;
 
     BroadcastReceiver receiver = null;
